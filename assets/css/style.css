@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f5faff;
+  color: #2e3746;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header */
+header {
+  color: #2e3746;
+  width: 100%;
+  height: 75vh;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 226, 89),
+    rgb(255, 167, 81)
+  );
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  z-index: 1;
+  background-color: #2e3746;
+  width: 100%;
+  height: 10vh;
+  padding-top: 1.5%;
+  border-radius: 0 0 30px 30px;
+  -webkit-border-radius: 0 0 30px 30px;
+  -moz-border-radius: 0 0 30px 30px;
+  -ms-border-radius: 0 0 30px 30px;
+  -o-border-radius: 0 0 30px 30px;
+  box-shadow: 0 1rem 2rem rgba(46, 55, 70, 0.5);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  width: 10%;
+}
+
+.navbar a {
+  color: #f5faff;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+
+.navbar a:hover {
+  background-color: #f5faff;
+  color: #2e3746;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  padding: 5%;
+}
+
+/* Sec Hero */
+header .hero {
+  width: 80%;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+header .hero h2,
+h1 {
+  text-shadow: 0 0.5rem 0.8rem rgb(46, 55, 70);
+}
+
+header .hero img {
+  width: 15%;
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+  outline: 3px #2e3746 solid;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  filter: drop-shadow(0 1rem 0.4rem rgba(46, 55, 70, 0.5));
+  -webkit-filter: drop-shadow(0 1rem 0.4rem rgba(46, 55, 70, 0.5));
+  -moz-filter: drop-shadow(0 1.5rem 2rem rgba(46, 55, 70, 0.5));
+  -ms-filter: drop-shadow(0 1.5rem 2rem rgba(46, 55, 70, 0.5));
+  -o-filter: drop-shadow(0 1.5rem 2rem rgba(46, 55, 70, 0.5));
+}
+
+header .hero ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header .hero li {
+  width: 3%;
+}
+
+header i {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: #2e3746;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+
+header i:hover {
+  background-color: #f5faff;
+  color: #2e3746;
+  padding: 10% 10% 7% 10%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateY(-30%);
+  -webkit-transform: translateY(-30%);
+  -moz-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  -o-transform: translateY(-30%);
+}
+
+header i a {
+  text-decoration: none;
+}
+
+header .wave {
+  position: absolute;
+  bottom: -25.7%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  filter: drop-shadow(0 0.5rem 1rem rgba(46, 55, 70, 0.5));
+  -webkit-filter: drop-shadow(0 0.5rem 1rem rgba(46, 55, 70, 0.5));
+  -moz-filter: drop-shadow(0 0.5rem 1rem rgba(46, 55, 70, 0.5));
+  -ms-filter: drop-shadow(0 0.5rem 1rem rgba(46, 55, 70, 0.5));
+  -o-filter: drop-shadow(0 0.5rem 1rem rgba(46, 55, 70, 0.5));
+}
+
+/* Main */
+/* Sec About Me */
+main .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main .about-me {
+  margin-top: 5rem;
+  width: 55%;
+  text-align: center;
+}
+
+main .about-me h3 {
+  font-size: 2.3rem;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+main .about-me span {
+  font-weight: 800;
+}
+
+main .about-me p {
+  font-size: 1.2rem;
+}
+
+/* Sec Experience */
+main .box {
+  width: 50%;
+  height: 60vh;
+  padding: 4%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 226, 89),
+    rgb(255, 167, 81)
+  );
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(46, 55, 70, 0.5);
+}
+
+main .box i {
+  font-size: 2.5rem;
+}
+
+main .box h3 {
+  text-align: center;
+  font-size: 2.3rem;
+  text-decoration: underline;
+}
+
+main .box .experience {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+main .box .item {
+  height: 30vh;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+main .box .item:hover {
+  transform: translateY(-0.3rem);
+  -webkit-transform: translateY(-0.3rem);
+  -moz-transform: translateY(-0.3rem);
+  -ms-transform: translateY(-0.3rem);
+  -o-transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 1rem rgba(46, 55, 70, 0.651);
+}
+
+/* Sec Education */
+
+main .edu {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+}
+
+main .edu img:nth-child(even) {
+  width: 15%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+main .edu img:nth-child(odd) {
+  width: 10%;
+}
+
+iframe {
+  margin-top: 2%;
+  margin-left: 5%;
+  border: 0;
+  border-radius: 50%;
+}
